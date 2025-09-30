@@ -37,11 +37,11 @@ class Program
         return studentAnswers;
     }
 
-    private static void gradeExam(string[] studentAnswers)
+    private static void gradeExam(string[] studentAnswers)  //compare answers from file to correct answers
     {
         int correctCount = 0;
         int wrongCount = 0;
-        List<int> incorrectQuestions = new List<int>();
+        List<int> incorrectQuestions = new List<int>(); //add all wrong answer numbers here
 
         for (int i = 0; i < studentAnswers.Length; i++)
         {
@@ -56,7 +56,7 @@ class Program
             }
         }
 
-
+        //print out results based on grade
         bool passed = correctCount >= 15;
         Console.WriteLine($"Result: {(passed ? "PASSED" : "FAILED")}");
         Console.WriteLine($"Correct: {correctCount}/20");
@@ -69,6 +69,7 @@ class Program
     {
         string filePath = GetFilePath();
 
+        //end program if no file is given
         if (string.IsNullOrEmpty(filePath))
         {
             Console.WriteLine("No file selected. Exiting...");
@@ -77,6 +78,7 @@ class Program
 
         try
         {
+            //get answers from file and grade them
             string[] studentAnswers = ReadAnswers(filePath);
             gradeExam(studentAnswers);
         }
