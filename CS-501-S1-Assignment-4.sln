@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textbook-Problem-6-4", "Tex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textbook-Problem-7-4", "Textbook-Problem-7-4\Textbook-Problem-7-4.csproj", "{A6AD2070-4142-4116-9A90-46A8D8854C6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textbook-Problem-7-6", "Textbook-Problem-7-6\Textbook-Problem-7-6.csproj", "{31F5B278-8025-40EF-9478-7E3D16C1450D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textbook-Problem-7-10", "Textbook-Problem-7-10\Textbook-Problem-7-10.csproj", "{5A918631-1F16-4F83-8F36-EA70805AAE72}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textbook-Problem-8-3", "Textbook-Problem-8-3\Textbook-Problem-8-3.csproj", "{A7DD14F6-6DFE-4B00-AA79-0CC6F2C45D84}"
@@ -20,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textbook-Problem-8-5", "Textbook-Problem-8-5\Textbook-Problem-8-5.csproj", "{7A637B6E-953D-4D70-8037-B72FF4275269}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textbook-Problem-6-9", "Textbook-Problem-6-9\Textbook-Problem-6-9.csproj", "{C8EA6724-C7BA-C2DE-E528-A4EB1D16766D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textbook-Problem-7-6", "Textbook-Problem-7-6\Textbook-Problem-7-6.csproj", "{6FEF5A74-DDBE-4363-420E-43028747E17A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +39,6 @@ Global
 		{A6AD2070-4142-4116-9A90-46A8D8854C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6AD2070-4142-4116-9A90-46A8D8854C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6AD2070-4142-4116-9A90-46A8D8854C6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31F5B278-8025-40EF-9478-7E3D16C1450D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31F5B278-8025-40EF-9478-7E3D16C1450D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31F5B278-8025-40EF-9478-7E3D16C1450D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31F5B278-8025-40EF-9478-7E3D16C1450D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A918631-1F16-4F83-8F36-EA70805AAE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A918631-1F16-4F83-8F36-EA70805AAE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A918631-1F16-4F83-8F36-EA70805AAE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,6 +59,10 @@ Global
 		{C8EA6724-C7BA-C2DE-E528-A4EB1D16766D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8EA6724-C7BA-C2DE-E528-A4EB1D16766D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8EA6724-C7BA-C2DE-E528-A4EB1D16766D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FEF5A74-DDBE-4363-420E-43028747E17A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FEF5A74-DDBE-4363-420E-43028747E17A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FEF5A74-DDBE-4363-420E-43028747E17A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FEF5A74-DDBE-4363-420E-43028747E17A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

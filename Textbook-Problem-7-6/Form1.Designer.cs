@@ -1,4 +1,4 @@
-﻿namespace Textbook_Problem_7_6
+﻿namespace _7_6_name_search
 {
     partial class Form1
     {
@@ -28,12 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            txtNameInput = new TextBox();
+            btnCheckName = new Button();
+            lblResult = new Label();
+            SuspendLayout();
+            // 
+            // txtNameInput
+            // 
+            txtNameInput.Location = new Point(360, 125);
+            txtNameInput.Name = "txtNameInput";
+            txtNameInput.Size = new Size(100, 23);
+            txtNameInput.TabIndex = 0;
+            txtNameInput.Text = "Input a name";
+            // 
+            // btnCheckName
+            // 
+            btnCheckName.Location = new Point(371, 176);
+            btnCheckName.Name = "btnCheckName";
+            btnCheckName.Size = new Size(75, 23);
+            btnCheckName.TabIndex = 1;
+            btnCheckName.Text = "Check name";
+            btnCheckName.UseVisualStyleBackColor = true;
+            btnCheckName.Click += btnCheckName_Click;
+            // 
+            // lblResult
+            // 
+            lblResult.AutoSize = true;
+            lblResult.Location = new Point(328, 231);
+            lblResult.Name = "lblResult";
+            lblResult.Size = new Size(168, 15);
+            lblResult.TabIndex = 2;
+            lblResult.Text = "Was it a most common name?";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(lblResult);
+            Controls.Add(btnCheckName);
+            Controls.Add(txtNameInput);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtNameInput;
+        private Button btnCheckName;
+        private Label lblResult;
     }
 }

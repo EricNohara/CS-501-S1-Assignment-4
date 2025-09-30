@@ -1,4 +1,4 @@
-namespace Textbook_Problem_7_6
+namespace _7_6_name_search
 {
     internal static class Program
     {
