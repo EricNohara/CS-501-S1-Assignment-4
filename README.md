@@ -1,1 +1,5 @@
-https://docs.google.com/document/d/1OL59QSCQ1CsWaiPnVAWkWZEdh4ciEsVZEfrv6TB3vEg/edit?usp=sharing
+# CS 501 S1 Assignment 4
+### Eric, Temi, Noah, Zac
+
+### Multiple Choice Solutions:
+Find our multiple choice solutions in the Assets folder
