@@ -1,4 +1,4 @@
-namespace Textbook_Problem_6_9
+namespace _6_9_RockPaperScissors
 {
     internal static class Program
     {
