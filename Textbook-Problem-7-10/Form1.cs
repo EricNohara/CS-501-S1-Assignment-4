@@ -37,6 +37,7 @@ namespace Textbook_Problem_7_10
                 decimal amountSpent = decimal.Parse(amountTextBox.Text);
                 totalAmountSpent += amountSpent;
 
+                //randomizming pictures 
                 fruitPic1.Image = getRandomFruit();
                 fruitPic2.Image = getRandomFruit();
                 fruitPic3.Image = getRandomFruit();
@@ -63,19 +64,19 @@ namespace Textbook_Problem_7_10
         private decimal calculateAmountWon(Image image1, Image image2, Image image3, decimal betAmount)
         {
             decimal winnings = 0;
-            if (image1 == image2 && image2 == image3)
+            if (image1 == image2 && image2 == image3) //if there are 3 matches
             {
                 winnings = betAmount * 3;
                 message = $"Jackpot! You have won ${winnings}";
                 return winnings;
             }
-            else if (image1 == image2 || image2 == image3 || image1 == image3)
+            else if (image1 == image2 || image2 == image3 || image1 == image3) // two matches
             {
                 winnings = betAmount * 2;
                 message = $"Nice. You have won ${winnings}";
                 return winnings;
             }
-            else
+            else // no matches
             {
                 message = $"Sorry! Better luck next time.";
                 return winnings;

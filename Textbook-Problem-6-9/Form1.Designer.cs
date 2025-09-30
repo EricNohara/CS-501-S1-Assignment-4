@@ -37,9 +37,10 @@
             // 
             // btnRock
             // 
-            btnRock.Location = new Point(198, 122);
+            btnRock.Location = new Point(368, 260);
+            btnRock.Margin = new Padding(6, 6, 6, 6);
             btnRock.Name = "btnRock";
-            btnRock.Size = new Size(75, 23);
+            btnRock.Size = new Size(139, 49);
             btnRock.TabIndex = 0;
             btnRock.Text = "Rock";
             btnRock.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@
             // 
             // btnPaper
             // 
-            btnPaper.Location = new Point(198, 180);
+            btnPaper.Location = new Point(368, 384);
+            btnPaper.Margin = new Padding(6, 6, 6, 6);
             btnPaper.Name = "btnPaper";
-            btnPaper.Size = new Size(75, 23);
+            btnPaper.Size = new Size(139, 49);
             btnPaper.TabIndex = 1;
             btnPaper.Text = "Paper";
             btnPaper.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@
             // 
             // btnScissors
             // 
-            btnScissors.Location = new Point(198, 235);
+            btnScissors.Location = new Point(368, 501);
+            btnScissors.Margin = new Padding(6, 6, 6, 6);
             btnScissors.Name = "btnScissors";
-            btnScissors.Size = new Size(75, 23);
+            btnScissors.Size = new Size(139, 49);
             btnScissors.TabIndex = 2;
             btnScissors.Text = "Scissors";
             btnScissors.UseVisualStyleBackColor = true;
@@ -68,9 +71,10 @@
             // lblResult
             // 
             lblResult.AutoSize = true;
-            lblResult.Location = new Point(403, 150);
+            lblResult.Location = new Point(748, 320);
+            lblResult.Margin = new Padding(6, 0, 6, 0);
             lblResult.Name = "lblResult";
-            lblResult.Size = new Size(39, 15);
+            lblResult.Size = new Size(78, 32);
             lblResult.TabIndex = 3;
             lblResult.Text = "Result";
             // 
@@ -78,25 +82,26 @@
             // 
             lblComputer.AutoSize = true;
             lblComputer.ForeColor = SystemColors.ControlText;
-            lblComputer.Location = new Point(403, 188);
+            lblComputer.Location = new Point(748, 401);
+            lblComputer.Margin = new Padding(6, 0, 6, 0);
             lblComputer.Name = "lblComputer";
-            lblComputer.Size = new Size(104, 15);
+            lblComputer.Size = new Size(207, 32);
             lblComputer.TabIndex = 4;
             lblComputer.Text = "Computers choice";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1486, 960);
             Controls.Add(lblComputer);
             Controls.Add(lblResult);
             Controls.Add(btnScissors);
             Controls.Add(btnPaper);
             Controls.Add(btnRock);
+            Margin = new Padding(6, 6, 6, 6);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

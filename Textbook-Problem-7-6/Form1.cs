@@ -6,6 +6,9 @@ namespace _7_6_name_search
         {
             InitializeComponent();
         }
+
+        // We could not find the names file in the textbook so we generated names ourselves
+        // and put it in a list to use
         private List<string> popularNames = new List<string>
         {
             "Olivia","Emma","Ava","Sophia","Isabella","Mia","Amelia","Harper","Evelyn","Abigail",
@@ -19,8 +22,11 @@ namespace _7_6_name_search
             "Quinn","Eva","Piper","Sophie","Sadie","Delilah","Josephine","Nevaeh","Adeline","Arya",
             "Emery","Lydia","Clara","Vivian","Madeline","Peyton","Julia","Rylee","Brielle","Reagan"
         };
+
+        // event handler for the check name button click
         private void btnCheckName_Click(object sender, EventArgs e)
         {
+            // get use input, validate it, then check if it is in the list of most popular names we generated
             string userInput = txtNameInput.Text.Trim();
 
             if (string.IsNullOrEmpty(userInput))
