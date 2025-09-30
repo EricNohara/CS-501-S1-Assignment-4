@@ -1,8 +1,8 @@
 namespace Textbook_Problem_7_10
 {
-    public partial class Form1 : Form
+    public partial class form_slotMachine : Form
     {
-        public Form1()
+        public form_slotMachine()
         {
             InitializeComponent();
         }

@@ -43,6 +43,8 @@ namespace Bank_Account_Challenge
         }
 
         //methods
+
+        //constructor
         public BankAccount(String accountNumber, String accountHolderName)
         {
             this.accountNumber = accountNumber;
@@ -50,16 +52,19 @@ namespace Bank_Account_Challenge
             balance = 0.0m;
         }
 
+        //deposit an amount
         public void deposit(decimal amount)
         {
-            if (amount < 0) { throw new Exception(); }
+            if (amount < 0) { throw new Exception(); }  //only allow depositing positive numbers
             balance += amount;
         }
 
+        //withdraw an amount
         public void withdraw(decimal amount)
         {
             if (balance < amount || amount < 0)
             {
+                //don't allow withdrawing more than is there
                 throw new Exception();
             } 
             else
@@ -68,6 +73,7 @@ namespace Bank_Account_Challenge
             }
         }
 
+        //a tostring method to make printing account details easier
         override public String ToString()
         {
             String output =

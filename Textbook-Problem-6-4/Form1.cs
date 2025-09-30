@@ -4,11 +4,12 @@ namespace Textbook_Problem_6_4
     {
         private CheckBox[] checkboxes;  //list of checkboxes, useful for handling button presses
         private TextBox[] textboxes;    //list of textboxes for same reason
-        private int laborCharge = 75;
-        private double taxPercent = 0.06;
+        private int laborCharge = 75;   //hourly labor charge
+        private double taxPercent = 0.06;   //tax rate for parts
         public form_main()
         {
             InitializeComponent();
+            //initialize checkboxes
             checkboxes = new CheckBox[] {
                 check_inspection, check_lubeJob, check_oilChange,
                 check_radiatorFlush, check_replaceMuffler, check_tireRotation,
@@ -28,16 +29,19 @@ namespace Textbook_Problem_6_4
 
         private void button_clear_Click(object sender, EventArgs e)
         {
+            //call the form clearing method
             clearForm();
         }
 
         private void button_calculate_Click(object sender, EventArgs e)
         {
+            //get all the individual costs and sum them up
             double serviceAndLabor = serviceAndLaborCost();
             double parts = partsCharges();
             double tax = taxCharges();
             double total = serviceAndLabor + parts + tax;
 
+            //assign the right boxes the cost amounts they show
             text_serviceLaborSummary.Text = serviceAndLabor.ToString("C");
             text_partsSummary.Text = parts.ToString("C");
             text_taxSummary.Text = tax.ToString("C");
@@ -47,6 +51,7 @@ namespace Textbook_Problem_6_4
         //method to calculate service and labor cost
         private double serviceAndLaborCost()
         {
+            //add up the value associated with every checkbox
             double serviceAndLabor = 0.0;
             serviceAndLabor += oilChangeCharges();
             serviceAndLabor += lubeJobCharges();
@@ -55,6 +60,7 @@ namespace Textbook_Problem_6_4
             serviceAndLabor += inspectionCharges();
             serviceAndLabor += replaceMufflerCharges();
             serviceAndLabor += tireRotationCharges();
+            serviceAndLabor += laborCharges();
             return serviceAndLabor;
         }
 
@@ -113,6 +119,7 @@ namespace Textbook_Problem_6_4
             }
             catch (Exception)
             {
+                //should the parts cost be an invalid value, just set the box blank and treat the value as 0.
                 text_parts.Text = "";
                 return 0;
             }
@@ -127,6 +134,7 @@ namespace Textbook_Problem_6_4
             }
             catch (Exception)
             {
+                //should the hours be an invalid value, just set the box blank and treat the value as 0.
                 text_hours.Text = "";
                 return 0;
             }

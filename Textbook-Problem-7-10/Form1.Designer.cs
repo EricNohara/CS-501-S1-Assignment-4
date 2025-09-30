@@ -1,6 +1,6 @@
 ﻿namespace Textbook_Problem_7_10
 {
-    partial class Form1
+    partial class form_slotMachine
     {
         /// <summary>
         ///  Required designer variable.
@@ -43,51 +43,60 @@
             // fruitPic1
             // 
             fruitPic1.Image = Properties.Resources.Apple;
-            fruitPic1.Location = new Point(278, 194);
+            fruitPic1.Location = new Point(171, 121);
+            fruitPic1.Margin = new Padding(2, 2, 2, 2);
             fruitPic1.Name = "fruitPic1";
-            fruitPic1.Size = new Size(126, 130);
+            fruitPic1.Size = new Size(78, 81);
+            fruitPic1.SizeMode = PictureBoxSizeMode.StretchImage;
             fruitPic1.TabIndex = 0;
             fruitPic1.TabStop = false;
             // 
             // fruitPic2
             // 
             fruitPic2.Image = Properties.Resources.Cherries;
-            fruitPic2.Location = new Point(474, 194);
+            fruitPic2.Location = new Point(292, 121);
+            fruitPic2.Margin = new Padding(2, 2, 2, 2);
             fruitPic2.Name = "fruitPic2";
-            fruitPic2.Size = new Size(144, 130);
+            fruitPic2.Size = new Size(89, 81);
+            fruitPic2.SizeMode = PictureBoxSizeMode.StretchImage;
             fruitPic2.TabIndex = 1;
             fruitPic2.TabStop = false;
             // 
             // fruitPic3
             // 
             fruitPic3.Image = Properties.Resources.Banana;
-            fruitPic3.Location = new Point(674, 194);
+            fruitPic3.Location = new Point(415, 121);
+            fruitPic3.Margin = new Padding(2, 2, 2, 2);
             fruitPic3.Name = "fruitPic3";
-            fruitPic3.Size = new Size(131, 130);
+            fruitPic3.Size = new Size(81, 81);
+            fruitPic3.SizeMode = PictureBoxSizeMode.StretchImage;
             fruitPic3.TabIndex = 2;
             fruitPic3.TabStop = false;
             // 
             // amountTextBox
             // 
-            amountTextBox.Location = new Point(474, 386);
+            amountTextBox.Location = new Point(292, 241);
+            amountTextBox.Margin = new Padding(2, 2, 2, 2);
             amountTextBox.Name = "amountTextBox";
-            amountTextBox.Size = new Size(200, 39);
+            amountTextBox.Size = new Size(125, 27);
             amountTextBox.TabIndex = 3;
             // 
             // amountLabel
             // 
             amountLabel.AutoSize = true;
-            amountLabel.Location = new Point(243, 386);
+            amountLabel.Location = new Point(150, 241);
+            amountLabel.Margin = new Padding(2, 0, 2, 0);
             amountLabel.Name = "amountLabel";
-            amountLabel.Size = new Size(225, 32);
+            amountLabel.Size = new Size(138, 20);
             amountLabel.TabIndex = 4;
             amountLabel.Text = "Amount Inserted: $ ";
             // 
             // spinBtn
             // 
-            spinBtn.Location = new Point(373, 468);
+            spinBtn.Location = new Point(230, 292);
+            spinBtn.Margin = new Padding(2, 2, 2, 2);
             spinBtn.Name = "spinBtn";
-            spinBtn.Size = new Size(150, 46);
+            spinBtn.Size = new Size(92, 29);
             spinBtn.TabIndex = 5;
             spinBtn.Text = "Spin";
             spinBtn.UseVisualStyleBackColor = true;
@@ -95,19 +104,20 @@
             // 
             // exitBtn
             // 
-            exitBtn.Location = new Point(550, 468);
+            exitBtn.Location = new Point(338, 292);
+            exitBtn.Margin = new Padding(2, 2, 2, 2);
             exitBtn.Name = "exitBtn";
-            exitBtn.Size = new Size(150, 46);
+            exitBtn.Size = new Size(92, 29);
             exitBtn.TabIndex = 6;
             exitBtn.Text = "Exit";
             exitBtn.UseVisualStyleBackColor = true;
             exitBtn.Click += exitBtn_Click;
             // 
-            // Form1
+            // form_slotMachine
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1089, 640);
+            ClientSize = new Size(670, 400);
             Controls.Add(exitBtn);
             Controls.Add(spinBtn);
             Controls.Add(amountLabel);
@@ -115,8 +125,9 @@
             Controls.Add(fruitPic3);
             Controls.Add(fruitPic2);
             Controls.Add(fruitPic1);
-            Name = "Form1";
-            Text = "Form1";
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "form_slotMachine";
+            Text = "Slot Machine";
             ((System.ComponentModel.ISupportInitialize)fruitPic1).EndInit();
             ((System.ComponentModel.ISupportInitialize)fruitPic2).EndInit();
             ((System.ComponentModel.ISupportInitialize)fruitPic3).EndInit();

@@ -19,6 +19,7 @@ namespace Bank_Account_Challenge
             String num = "";
             String name = "";
             Console.WriteLine("Enter an account number:");
+            //get the account number. Make sure it is a valid account number
             while (true)
             {
                 try
@@ -33,8 +34,10 @@ namespace Bank_Account_Challenge
                 }
             }
             Console.WriteLine("Enter account holder name:");
+            //get name. No validation necessary; let them name themselves whatever they want.
             name = Console.ReadLine();
 
+            //create the account object
             BankAccount account = new BankAccount(num, name);
 
             Console.WriteLine("Account created successfully!");
@@ -42,10 +45,12 @@ namespace Bank_Account_Challenge
             inputCycle(account);
         }
 
+        //this method repeatedly asks the user what they want to do
         static private void inputCycle(BankAccount account)
         {
             while(true)
             {
+                //request input
                 Console.WriteLine(
                     "Select the number of an option:"
                     + "\n1) Deposit"
@@ -82,6 +87,7 @@ namespace Bank_Account_Challenge
             }
         }
 
+        //method to handle deposits
         static private void deposit(BankAccount account)
         {
             Console.WriteLine("Enter an amount to deposit:");
@@ -96,11 +102,13 @@ namespace Bank_Account_Challenge
             }
             catch (Exception) 
             {
+                //if the input is not a number or the number is invalid, handle as error
                 Console.WriteLine("Invalid deposit amount: " + input + ". Deposit cancelled.");
                 return;
             }
         }
 
+        //method to handle withdrawals
         static private void withdraw(BankAccount account)
         {
             Console.WriteLine("Enter an amount to withdraw:");
@@ -115,6 +123,7 @@ namespace Bank_Account_Challenge
             }
             catch (Exception)
             {
+                //if the input is not a number or the number is invalid, handle as error
                 Console.WriteLine(
                     "Invalid withdrawal amount: " + input 
                     + ". Current account balance is " + account.Balance.ToString("C")
